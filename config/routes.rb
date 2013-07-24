@@ -3,7 +3,7 @@ RedditRails::Application.routes.draw do
   devise_for :users
 
   resources :pages, :links
-
+  resources :comments, only: [:create]
   root to: 'pages#index'
 
   # The priority is based upon order of creation:
