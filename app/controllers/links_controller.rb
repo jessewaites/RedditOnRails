@@ -9,6 +9,6 @@ class LinksController < ApplicationController
   end
 
   def create
-
+    Link.create(params[:link])
   end
 end
