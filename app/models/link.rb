@@ -13,6 +13,10 @@
 
 class Link < ActiveRecord::Base
   attr_accessible :url, :link, :title, :user_id
-
+ 
+  # Associations -------------------
   belongs_to :user
+
+  # Validations --------------------
+  validates :url, :title, presence: true
 end

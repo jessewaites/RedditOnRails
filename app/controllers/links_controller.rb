@@ -9,6 +9,11 @@ class LinksController < ApplicationController
   end
 
   def create
-    Link.create(params[:link])
+   @link = Link.create(params[:link])
+   if @link.errors.any?
+     render "new"
+   else
+     redirect_to link_path(@link)
+   end
   end
 end
