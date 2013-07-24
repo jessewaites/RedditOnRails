@@ -2,7 +2,7 @@ RedditRails::Application.routes.draw do
   
   devise_for :users
 
-  resources :pages
+  resources :pages, :links
 
   root to: 'pages#index'
 
