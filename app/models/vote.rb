@@ -13,6 +13,10 @@
 class Vote < ActiveRecord::Base
   attr_accessible :link_id, :up, :user_id
 
+  # Validations ------------------------
+  # it cannot save any new votes unless the user_id and link_id combo haven't been taken created before.
+  validates :user_id, :uniqueness => { :scope => :link_id } #
+
   # Associations -----------------------
   belongs_to :user
   belongs_to :link

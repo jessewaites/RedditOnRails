@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42ed4efa-1b2e-4180-ac14-8faa37be0b01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/link.rb" afterPath="$PROJECT_DIR$/app/models/link.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/vote.rb" afterPath="$PROJECT_DIR$/app/models/vote.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/votes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/votes_controller.rb" />
     </list>
     <ignored path="reddit-rails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,10 +13,10 @@
     <file path="/links_controller.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374699532972" ignored="false" />
     <file path="/comments_controller.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374701426755" ignored="false" />
     <file path="/20130724214631_create_votes.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374702467624" ignored="false" />
-    <file path="/vote.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374702740609" ignored="false" />
+    <file path="/vote.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374707748558" ignored="false" />
     <file path="/user.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374702708075" ignored="false" />
     <file path="/link.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374702727546" ignored="false" />
-    <file path="/votes_controller.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374704422928" ignored="false" />
+    <file path="/votes_controller.rb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374708134148" ignored="false" />
     <file path="/index.html.erb" changelist="42ed4efa-1b2e-4180-ac14-8faa37be0b01" time="1374707315926" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +40,7 @@
       <file leaf-file-name="vote.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+            <state line="16" column="4" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,19 +55,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="62" selection-end="62" vertical-scroll-proportion="0.078125">
+            <state line="4" column="4" selection-start="62" selection-end="62" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="votes_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="votes_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/votes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+            <state line="8" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.15151516">
               <folding />
             </state>
           </provider>
@@ -147,9 +143,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20130724214631_create_votes.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/link.rb" />
+        <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/vote.rb" />
         <option value="$PROJECT_DIR$/app/controllers/votes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
       </list>
     </option>
   </component>
@@ -667,23 +663,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="62" selection-end="62" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+        <state line="16" column="4" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/votes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="62" selection-end="62" vertical-scroll-proportion="0.078125">
+        <state line="8" column="21" selection-start="327" selection-end="327" vertical-scroll-proportion="0.15151516">
           <folding />
         </state>
       </provider>
