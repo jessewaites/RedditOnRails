@@ -2,10 +2,11 @@
 
 <% @links.each do |link| %>
 <ul>
-  <li><%= link_to link.title, link.url %></li>
-  <ul>
-    <li><%= link_to "Comments", link %></li>
-  </ul>
+    <%= link_to link.title, link.url %>|
+    <%= link_to 'Comments', link %>|
+    <%= link_to 'Up Vote', votes_path({:vote => {:link_id => link.id, :up => true}}), :method => :post %>|
+    <%= link_to "Down Vote", votes_path(:vote => {:link_id => link.id, :up => false}), :method => :post %> |
+    Votes: <%=link.votes.where(up: true).count - link.votes.where(up: false).count%> |
 </ul>
 <%end%>
 <%= will_paginate @links %>

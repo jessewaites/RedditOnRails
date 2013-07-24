@@ -16,6 +16,7 @@ class Link < ActiveRecord::Base
   # Associations -------------------
   belongs_to :user
   has_many :comments
+  has_many :votes
 
   # Validations --------------------
   validates :url, :title, presence: true
