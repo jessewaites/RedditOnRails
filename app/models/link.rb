@@ -11,10 +11,11 @@
 #
 
 class Link < ActiveRecord::Base
-  attr_accessible :url, :link, :title, :user_id
+  attr_accessible :url, :title, :user_id
  
   # Associations -------------------
   belongs_to :user
+  has_many :comments
 
   # Validations --------------------
   validates :url, :title, presence: true
