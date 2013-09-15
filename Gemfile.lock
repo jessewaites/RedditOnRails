@@ -56,7 +56,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.4.0)
     devise (3.0.0)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -164,6 +164,7 @@ DEPENDENCIES
   activeadmin
   annotate
   coffee-rails (~> 3.2.1)
+  coffee-script-source (~> 1.4.0)
   devise
   jquery-rails (~> 2.3.0)
   pg
