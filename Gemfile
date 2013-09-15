@@ -5,7 +5,7 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'activeadmin'
+gem 'activeadmin', '~> 0.5.0'
 
 group :development do
   gem 'sqlite3'
@@ -21,7 +21,7 @@ group :assets do
   
   gem 'coffee-rails', '~> 3.2.1'
   gem 'coffee-script-source', '~> 1.4.0'
-  
+
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

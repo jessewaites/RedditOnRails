@@ -14,7 +14,7 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    activeadmin (0.6.0)
+    activeadmin (0.5.1)
       arbre (>= 1.0.1)
       bourbon (>= 1.0.0)
       devise (>= 1.1.2)
@@ -161,7 +161,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeadmin
+  activeadmin (~> 0.5.0)
   annotate
   coffee-rails (~> 3.2.1)
   coffee-script-source (~> 1.4.0)
