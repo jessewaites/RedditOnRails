@@ -1,4 +1,5 @@
-<h1>Form for a new link</h1>
+<h3>Submit your link.</h3>
+<h5>Please prefix URL with "HTTP://www."</h5>
 
 <%=form_for(@link) do |f|%>
   <% if @link.errors.any? %>
@@ -12,6 +13,6 @@
     </div>
   <% end %>
   <%= f.text_field :title, placeholder: "Title..." %>
-  <%= f.text_field :url, placeholder: "Website url" %>
+  <%= f.text_field :url, placeholder: "Format:    http://www.YourLink.com" %>
   <%= f.submit %>
 <%end%>

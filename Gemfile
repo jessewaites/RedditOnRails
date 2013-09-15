@@ -41,6 +41,9 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'zurb-foundation'
+
 gem 'annotate'
 gem 'devise'
 gem 'will_paginate', '~> 3.0'
