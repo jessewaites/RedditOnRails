@@ -44,10 +44,14 @@
 </nav>
 
 <div class="row">
-  <div class="small-8 columns"><%= yield %></div>
+  <div class="small-8 columns">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %></div>
   <div class="small-4 columns">
     <h2 class="subheader">Reddit On Rails</h2>
-    This was a very simple weekend project to build a Reddit clone in Rails by Jesse Waites. Mostly stock Foundation 4 front-end, Devise authentication. Rails version number 3.2. Anyone can see links and comments, but you must be logged in to upvote or downvote any of the submitted links. 
+    This was a very simple weekend project to build a Reddit clone in Rails by Jesse Waites. Mostly stock Foundation 4 front-end. <%= link_to "Active Admin is installed and can be accessed here.", admin_root_path %> - login is admin@example.com, pw is "password". Site built in Rails version number 3.2. Anyone can see links and comments, but you must be logged in to upvote or downvote any of the submitted links. 
   </div>
 </div>
 
