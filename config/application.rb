@@ -60,6 +60,6 @@ module RedditRails
     config.assets.version = '1.0'
   
     # From the devise documentation
-    config.assets.initialize_on_precompile = false
+    config.assets.precompile += ['active_admin.css.scss', 'active_admin.js']
   end
 end
