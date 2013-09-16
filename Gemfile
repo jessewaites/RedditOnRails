@@ -9,6 +9,7 @@ gem 'activeadmin', '~> 0.5.0'
 
 group :development do
   gem 'sqlite3'
+  gem 'sass-rails',   '~> 3.2.3'
 end
 group :production do
   gem 'pg'
@@ -31,7 +32,6 @@ end
 
 gem "jquery-rails", "~> 2.3.0"
 
-gem 'sass-rails',   '~> 3.2.3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

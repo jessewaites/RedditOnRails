@@ -6,7 +6,7 @@ RedditRails::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :users
-  ActiveAdmin.routes(self)
+  # ActiveAdmin.routes(self)
 
   resources :pages, :links
   resources :comments, only: [:create]
